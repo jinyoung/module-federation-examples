@@ -66,7 +66,7 @@ module.exports = (env = {}) => ({
     new ModuleFederationPlugin({
       name: 'layout',
       remotes: {
-        home: 'home@http://localhost:3002/remoteEntry.js',
+        home: 'home@https://3002-jinyoung-modulefederati-5c4jygnxpgf.ws-us81.gitpod.io/remoteEntry.js',
       },
       shared: {
         ...deps,
@@ -90,6 +90,7 @@ module.exports = (env = {}) => ({
     static: {
       directory: path.join(__dirname),
     },
+    allowedHosts: "all",
     compress: true,
     port: 3001,
     hot: true,

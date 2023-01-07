@@ -8,7 +8,7 @@ This illusatrates that the approach used allows communication to-and-fro Vue and
 
 ---
 
-## Running
+## Running (for each folder - home and layout)
 
 Install dependencies
 
@@ -22,3 +22,9 @@ This will build and serve both `home` and `layout` on ports `3002` and `3001` re
 
 - Host (layout, Vue app): [localhost:3001](http://localhost:3001/)
 - Remote (home, React app): [localhost:3002](http://localhost:3002/)
+
+
+If there's dependency error like follows, use the command:
+```
+yarn add @babel/preset-react
+```

@@ -10,6 +10,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
+    allowedHosts: "all",
     port: 3002,
   },
   output: {
